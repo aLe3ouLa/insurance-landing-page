@@ -1,0 +1,426 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 69.2%;
+}
+
+body {
+  font-family: 'Karla';
+}
+
+::-moz-selection {
+  color: hsl(216, 30%, 68%);
+  background: hsl(256, 26%, 20%);
+}
+
+::selection {
+  color: hsl(216, 30%, 68%);
+  background: hsl(256, 26%, 20%);
+}
+
+:root {
+  --dark-violet: hsl(256, 26%, 20%);
+  --grey-blue: hsl(216, 30%, 68%);
+  --very-dark-violet: hsl(270, 9%, 17%);
+  --grey-violet: hsl(273, 4%, 51%);
+  --light-grey: hsl(0, 0%, 98%);
+}
+
+/* =========== HEADER ===========*/
+
+#header {
+  position: relative;
+}
+
+#hero {
+  height: 75vh;
+}
+
+.hero-navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 2rem;
+  z-index: 3;
+  background-color: var(--light-grey);
+  position: relative;
+}
+
+.pattern-right {
+  position: absolute;
+  right: 0;
+  z-index: 2;
+}
+
+.pattern-left {
+  position: absolute;
+  bottom: -35rem;
+  left: 0;
+}
+
+.navbar-links {
+  list-style-type: none;
+  display: none;
+
+  align-items: center;
+}
+
+.navbar-links li {
+  margin-right: 1.7rem;
+  font-size: 1.3rem;
+  text-transform: uppercase;
+  color: var(--grey-violet);
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.navbar-links li:last-of-type {
+  margin-right: 0;
+}
+
+/* =========== HERO ===========*/
+
+#hero,
+#contact,
+#mission {
+  padding: 3rem 2rem;
+}
+
+#hero {
+  display: flex;
+  flex-direction: column;
+  background-color: hsl(256, 26%, 20%);
+
+  justify-content: center;
+
+  position: relative;
+}
+
+.hero--details,
+.hero--img {
+  transform: translateY(10rem);
+  color: white;
+}
+
+.hero--details {
+  flex-grow: 1;
+  flex-basis: 0;
+
+  text-align: center;
+}
+
+.hr {
+  visibility: hidden;
+}
+
+.hero--details-title {
+  font-size: 3rem;
+  font-weight: 400;
+  margin-bottom: 2.4rem;
+  font-family: 'DM Serif Display';
+  word-wrap: normal;
+  max-width: 100%;
+  line-height: 3rem;
+  text-align: center;
+}
+
+.hero--details-subtitle {
+  line-height: 3rem;
+  margin-bottom: 2rem;
+  max-width: 100%;
+  font-size: 1.6rem;
+  text-align: center;
+}
+
+/* =========== CONTACT ===========*/
+
+.contact-box {
+  background-color: var(--dark-violet);
+  color: white;
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+  justify-content: space-between;
+  padding: 6rem;
+
+  position: relative;
+}
+
+.contact-box-img {
+  position: absolute;
+  top: 0;
+  right: 0;
+  overflow: hidden;
+  z-index: 0;
+
+  height: 100%;
+}
+
+.contact-box h2 {
+  font-size: 3rem;
+  line-height: 4rem;
+  font-weight: 400;
+  flex-basis: 48%;
+  font-family: 'DM Serif Display';
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+/* =========== VALUES ===========*/
+
+.values {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  list-style-type: none;
+}
+
+.values-title {
+  font-size: 4rem;
+  font-weight: 400;
+  margin-bottom: 6.4rem;
+  font-family: 'DM Serif Display';
+  word-wrap: normal;
+  max-width: 88%;
+  line-height: 4rem;
+}
+
+.value-list-item {
+  flex: 0 0 30rem;
+}
+
+.value-list-item img {
+  margin-bottom: 1.2rem;
+}
+
+.value-list-item h3 {
+  font-family: 'DM Serif Display';
+  font-size: 1.8rem;
+  margin-bottom: 1.2rem;
+}
+
+.value-list-item p {
+  font-size: 1.6rem;
+  line-height: 1.8rem;
+  color: var(--grey-violet);
+}
+
+.btn {
+  text-transform: uppercase;
+  border: 2px solid var(--very-dark-violet);
+  background-color: transparent;
+  color: var(--very-dark-violet);
+
+  padding: 1rem 3rem;
+
+  font-weight: 600;
+}
+
+.btn:hover {
+  background-color: var(--very-dark-violet);
+  color: var(--light-grey);
+}
+
+.btn-white {
+  color: var(--light-grey);
+  border: 2px solid var(--light-grey);
+
+  z-index: 1;
+}
+
+.btn:hover {
+  background-color: var(--light-grey);
+  color: var(--very-dark-violet);
+}
+
+/*
+============== FOOTER ==============
+*/
+
+footer {
+  background-color: var(--light-grey);
+  padding: 4rem 10rem;
+
+  position: relative;
+}
+
+.footer-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.social {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+
+  margin-bottom: 3rem;
+}
+
+.social img {
+  margin-bottom: 3rem;
+}
+
+.social-list {
+  display: flex;
+  list-style-type: none;
+}
+
+.social-list li {
+  margin-right: 1rem;
+}
+
+.social-list li svg:hover > path {
+  fill: var(--very-dark-violet);
+}
+
+.social-list li:last-of-type {
+  margin-right: 0;
+}
+
+.footer-hr {
+  height: 2px;
+  border-width: 0;
+  color: rgb(228, 228, 228);
+  background-color: rgb(228, 228, 228);
+  margin-bottom: 3rem;
+}
+
+footer nav {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer-nav-title {
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  color: var(--grey-violet);
+  letter-spacing: 2px;
+  margin-bottom: 3rem;
+  margin-top: 3rem;
+  text-align: center;
+}
+
+.footer-nav-ul {
+  list-style-type: none;
+
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  letter-spacing: 1px;
+  font-weight: 600;
+  color: var(--very-dark-violet);
+}
+
+.footer-nav-ul li {
+  margin-bottom: 1.2rem;
+  text-align: center;
+}
+
+@media screen and (min-width: 60rem) {
+  #hero,
+  #contact,
+  #mission {
+    padding: 8rem 10rem;
+  }
+
+  .hero-navbar {
+    padding: 2rem 12rem;
+  }
+
+  .navbar-links {
+    display: flex;
+  }
+
+  .burger {
+    display: none;
+  }
+
+  #mission {
+    padding-bottom: 0;
+    margin: 0 12rem;
+  }
+
+  #hero {
+    flex-direction: row;
+  }
+
+  .hr {
+    max-width: 17rem;
+    margin-bottom: 5rem;
+    visibility: visible;
+  }
+
+  .hero--details-title {
+    font-size: 7rem;
+    max-width: 88%;
+    line-height: 7rem;
+    text-align: left;
+  }
+
+  .hero--details-subtitle {
+    line-height: 3rem;
+    margin-bottom: 2rem;
+    max-width: 90%;
+    font-size: 1.6rem;
+    text-align: left;
+  }
+
+  .hero--details {
+    margin: 0;
+    margin-right: 3rem;
+    text-align: left;
+  }
+
+  .values {
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: left;
+  }
+
+  .contact-box {
+    flex-direction: row;
+  }
+
+  .value-list-item p {
+    font-size: 1.2rem;
+  }
+
+  .contact-box h2 {
+    font-size: 6rem;
+    line-height: 5rem;
+    text-align: left;
+
+    margin-bottom: 0;
+  }
+
+  .social {
+    flex-direction: row;
+  }
+
+  .social img {
+    margin-bottom: 0;
+  }
+
+  footer nav {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  .footer-nav-title {
+    margin-top: 0;
+    text-align: left;
+  }
+
+  .footer-nav-ul li {
+    text-align: left;
+  }
+}
